@@ -40,22 +40,24 @@ Strapi gives you many possible deployment options for your project including [St
 yarn strapi deploy
 ```
 
-## 📚 Learn more
+## Example env
+```bash
+# App Keys and Secrets
+APP_KEYS=your_app_keys_comma_separated
+API_TOKEN_SALT=your_api_token_salt
+ADMIN_JWT_SECRET=your_admin_jwt_secret
+TRANSFER_TOKEN_SALT=your_transfer_token_salt
 
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
+# JWT
+JWT_SECRET=your_jwt_secret
 
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
+# Database Config
+DATABASE_CLIENT=postgres
+DATABASE_HOST=your_database_host
+DATABASE_PORT=your_database_port
+DATABASE_NAME=your_database_name
+DATABASE_USERNAME=your_database_username
+DATABASE_PASSWORD=your_database_password
+DATABASE_SSL=false
 
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
-
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+```
